@@ -1,8 +1,8 @@
 import os
 from time import sleep
 
-streamer = 'lammysnax_'
-os.chdir(f'/Users/keno/Desktop/twitch/{streamer}')
+streamer = 'INSERT STREAMER'
+os.chdir(f'INSERT PATH')
 
 
 

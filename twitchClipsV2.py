@@ -9,8 +9,8 @@ import twitchloader as tl
 
 
 #get autho token
-client_id = 'gedxi171d6nb81wnfugrb5ss9g5w3f'
-client_secret = 'h6xjgkch9rj3f8j4lhx0jo6f25mfst'
+client_id = ''
+client_secret = ''
 
 oauth_req = f'https://id.twitch.tv/oauth2/token?client_id={client_id}&client_secret={client_secret}&grant_type=client_credentials'
 
@@ -20,7 +20,7 @@ r1_json = r1.json()
 Authorization = 'Bearer ' + r1_json['access_token']
 
 ######################################################################
-current_streamer = 'lammysnax_'
+current_streamer = ''
 ######################################################################
 
 b_id = streamer_id.streamer_id[current_streamer]
@@ -39,7 +39,7 @@ r2_json = r2.json()
 
 #print(r2_json['data'][0]['url'])
 
-os.chdir(f'/Users/keno/Desktop/twitch/{current_streamer}')
+os.chdir(f'INSERT_PATH')
 
 for i in range(len(r2_json['data'])):
         url = r2_json['data'][i]['url']
